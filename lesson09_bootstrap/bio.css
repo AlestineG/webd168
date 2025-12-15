@@ -1,0 +1,58 @@
+body {
+  padding: 3px;
+  margin: auto;
+  border: 0;
+  border: 1px solid #000;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 2%;
+  margin-bottom: .5%;
+}
+
+h4 {
+  text-align: center;
+  margin-top: 3%;
+  margin-bottom: .5%
+}
+
+ul {
+  font-style: italic;
+}
+
+footer {
+  margin-top: 2%;
+  margin-bottom: .5%
+}
+
+
+
+.section {
+  margin: auto;
+}
+
+.logo {
+  display: flex;
+  margin: auto;
+  clip-path: ellipse(50% 35%);
+}
+
+.rounded-circle {
+  width: 100px;
+  height: 100px;
+  background-color: #f6f4e9;
+  border-radius: 50%;
+  position: relative;
+  top: 40px;
+  left: 40px;
+}
+
+.text-rectangle {
+  padding: 1rem;
+  border: 2px solid rgba(241, 234, 244, 0.954);
+  box-shadow: 5px 5px #9f9f9f;
+  border-radius: 0.5rem;
+  max-width: 65ch;
+  margin: auto;
+}
