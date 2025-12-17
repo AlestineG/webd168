@@ -1,0 +1,18 @@
+caption {
+  caption-side: top;
+}
+
+.table-dark {
+  --bs-table-bg: #b8c5d9;
+}
+
+header {
+  background: linear-gradient(to right, #d0e0ed, #b6e4e6);
+
+}
+
+.btn {
+  background: linear-gradient(to right, #67b6f6, #b6e4e6);
+}
+
+/*# sourceMappingURL=custom.css.map */
