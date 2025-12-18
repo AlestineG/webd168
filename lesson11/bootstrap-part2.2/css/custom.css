@@ -1,0 +1,156 @@
+body {
+  color: var(--bs-body-color);
+}
+
+caption {
+  caption-side: top;
+}
+
+header {
+  background: linear-gradient(to right, #D9CFC7, #F9F8F6);
+
+}
+
+.bg-dark {
+  background-color: #896C6C !important;
+  opacity: 90%;
+
+}
+
+/* Heart Animation*/
+
+/* container to hold and center hearts */
+.heart-container {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: 50px auto;
+}
+
+/* Base style for both hearts */
+.heart {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: #f5afaf;
+  transform: rotate(-45deg);
+  opacity: 50%;
+  /* Standard rotation for CSS heart shapes */
+}
+
+/* creates the rounded top parts of the heart */
+.heart::before,
+.heart::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: inherit;
+  border-radius: 50%;
+}
+
+.heart::before {
+  top: -50px;
+  left: 0;
+}
+
+.heart::after {
+  left: 50px;
+  top: 0;
+}
+
+/* specific positioning for overlap */
+.heart1 {
+  top: 20px;
+  left: 20px;
+  z-index: 1;
+  /* transparency helps see the overlap */
+  opacity: 0.8;
+}
+
+.heart2 {
+  top: 20%;
+  left: 65px;
+  background-color: #f9dfdf;
+  /* positions this heart on top */
+  z-index: 1;
+}
+
+/* triggers hover animation with cursor */
+.heart2:hover {
+  animation: movement 5.5s infinite;
+  background-color: #f9dfdf;
+  cursor: pointer;
+  opacity: 100%;
+}
+
+.table-dark {
+  --bs-table-bg: #D9C4B0;
+
+}
+
+.rounded-table {
+  border-collapse: collapse;
+  /* Merges adjacent borders into one */
+  border-radius: 12px;
+  /* Sets the corner curvature */
+  overflow: hidden;
+  /* Clips internal cell corners to match the radius */
+  border: 1px solid #ccc;
+  /* Outer border visibility */
+}
+
+/* custom hex color for stars */
+.custom-star {
+  color: #B77466;
+
+}
+
+.form-check-input:checked {
+  background-color: #B77466;
+  border-color: #B77466;
+}
+
+.btn {
+  background: linear-gradient(to right, #C9B59C, #EFE9E3);
+  box-shadow: 1px 2px 5px gray;
+
+}
+
+.btn-primary {
+  background: linear-gradient(to right, #C9B59C, #EFE9E3);
+  box-shadow: 1px 2px 5px gray;
+}
+
+.btn:hover {
+  color: #fff;
+  background-color: #101011;
+  border-color: #cbcac9;
+  border-radius: 10%;
+}
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: #101011;
+  border-color: #cbcac9;
+}
+
+@keyframes movement {
+  0% {
+    transform: rotate(75%);
+  }
+
+  30% {
+    transform: translateY(45%);
+  }
+
+  66% {
+    transform: translateX(100%) translateY(100%);
+  }
+
+  100% {
+    transform: translateX(-45deg);
+  }
+}
+
+/*# sourceMappingURL=custom.css.map */
