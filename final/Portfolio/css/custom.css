@@ -1,0 +1,199 @@
+caption {
+  caption-side: top;
+}
+
+header {
+  background: linear-gradient(to right, #D9CFC7, #F9F8F6);
+  /* 1:1*/
+
+}
+
+/* navbar and footer */
+.bg-dark {
+  background-color: #896C6C !important;
+  /* 4.47:1*/
+  opacity: 90%;
+
+}
+
+/* Heart Animation*/
+/* container to hold and center hearts */
+.heart-container {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: 50px auto;
+}
+
+/* Base style for both hearts */
+.heart {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: #f5afaf;
+  /* 1:1*/
+  transform: rotate(-45deg);
+  opacity: 50%;
+  /* Standard rotation for CSS heart shapes */
+}
+
+/* creates the rounded top parts of the heart */
+.heart::before,
+.heart::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: inherit;
+  border-radius: 50%;
+}
+
+.heart::before {
+  top: -50px;
+  left: 0;
+}
+
+.heart::after {
+  left: 50px;
+  top: 0;
+}
+
+/* specific positioning for overlap */
+.heart1 {
+  top: 20px;
+  left: 20px;
+  z-index: 1;
+  /* transparency helps see the overlap */
+  opacity: 0.8;
+}
+
+.heart2 {
+  top: 20%;
+  left: 65px;
+  background-color: #f9dfdf;
+  /* 1:*/
+  /* positions this heart on top */
+  z-index: 1;
+}
+
+/* triggers hover animation with cursor */
+.heart2:hover {
+  animation: movement 5.5s infinite;
+  background-color: #f9dfdf;
+  cursor: pointer;
+  opacity: 100%;
+}
+
+.table-dark {
+  --bs-table-bg: #D9C4B0;
+
+}
+
+.rounded-table {
+  border-collapse: collapse;
+  /* Merges adjacent borders into one */
+  border-radius: 12px;
+  /* Sets the corner curvature */
+  overflow: hidden;
+  /* Clips internal cell corners to match the radius */
+  border: 1px solid #ccc;
+  /* Outer border visibility */
+}
+
+/* custom hex color for stars */
+.custom-star {
+  color: #B77466;
+
+}
+
+.form-check-input:checked {
+  background-color: #B77466;
+  border-color: #b78466;
+}
+
+.btn {
+  background: linear-gradient(to right, #C9B59C, #EFE9E3);
+  box-shadow: 1px 2px 5px gray;
+
+}
+
+.btn-primary {
+  background: linear-gradient(to right, #C9B59C, #EFE9E3);
+  box-shadow: 1px 2px 5px gray;
+}
+
+.btn:hover {
+  color: #fff;
+  background-color: #101011;
+  border-color: #cbcac9;
+  border-radius: 10%;
+}
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: #101011;
+  border-color: #cbcac9;
+}
+
+/* Styling for accessibility page */
+/* Base Switch Styling */
+[role="switch"] {
+  min-width: 60px;
+  min-height: 32px;
+  /* Meets Target Size (Minimum) 2.5.8 */
+  padding: 4px;
+  border: 2px solid #333;
+  background: #f0f0f0;
+  cursor: pointer;
+  border-radius: 20px;
+  position: relative;
+}
+
+/* WCAG 2.2 Compliant Focus Indicator */
+[role="switch"]:focus-visible {
+  outline: 3px solid #005fcc;
+  outline-offset: 4px;
+}
+
+/* HIGH CONTRAST MODE: Activated when switch is ON */
+body.a11y-on {
+  background-color: #0b07e9 !important;
+  /* blue */
+  color: #f57600 !important;
+  /* orange */
+}
+
+body.a11y-on a {
+  color: #fff832 !important;
+  /* yellow links for high visibility */
+  text-decoration: underline !important;
+  font-weight: bold !important;
+}
+
+body.a11y-on button:not([role="switch"]) {
+  background: #1c15e7 !important;
+  color: #f57600 !important;
+  border: 2px solid #fff832 !important;
+}
+
+
+
+@keyframes movement {
+  0% {
+    transform: rotate(75%);
+  }
+
+  30% {
+    transform: translateY(45%);
+  }
+
+  66% {
+    transform: translateX(100%) translateY(100%);
+  }
+
+  100% {
+    transform: translateX(-45deg);
+  }
+}
+
+/*# sourceMappingURL=custom.css.map */
